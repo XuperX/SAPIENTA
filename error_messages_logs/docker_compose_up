@@ -1,0 +1,143 @@
+Attaching to sapienta_candc_1, sapienta_minio_1, sapienta_worker_1, sapienta_grobid_1, sapienta_web_1, sapienta_redis_1
+[36mcandc_1   |[0m 9004
+[33mgrobid_1  |[0m 15:42:07.567 [main] INFO org.grobid.service.main.GrobidServiceApplication - Configuration file: /opt/grobid/grobid-service/config/config.yaml
+[35mredis_1   |[0m 1:C 29 Sep 2022 15:42:07.820 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[35mredis_1   |[0m 1:C 29 Sep 2022 15:42:07.820 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started
+[35mredis_1   |[0m 1:C 29 Sep 2022 15:42:07.820 # Configuration loaded
+[32mminio_1   |[0m 
+[32mminio_1   |[0m  You are running an older version of MinIO released 2 years ago 
+[32mminio_1   |[0m  Update: Run `mc admin update` 
+[32mminio_1   |[0m 
+[32mminio_1   |[0m 
+[35mredis_1   |[0m 1:M 29 Sep 2022 15:42:07.821 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+[32mminio_1   |[0m 
+[32mminio_1   |[0m API: SYSTEM()
+[32mminio_1   |[0m Time: 15:42:07 UTC 09/29/2022
+[32mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[32mminio_1   |[0m Error: Unable to initialize config, some features may be missing Invalid credentials (*fmt.wrapError)
+[32mminio_1   |[0m        3: cmd/server-main.go:366:cmd.initAllSubsystems()
+[32mminio_1   |[0m        2: cmd/server-main.go:295:cmd.initServer()
+[32mminio_1   |[0m        1: cmd/server-main.go:500:cmd.serverMain()
+[35mredis_1   |[0m 1:M 29 Sep 2022 15:42:07.821 * Running mode=standalone, port=6379.
+[35mredis_1   |[0m 1:M 29 Sep 2022 15:42:07.821 # Server initialized
+[35mredis_1   |[0m 1:M 29 Sep 2022 15:42:07.821 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[32mminio_1   |[0m Endpoint: http://172.18.0.3:9000  http://127.0.0.1:9000 
+[32mminio_1   |[0m 
+[32mminio_1   |[0m Browser Access:
+[32mminio_1   |[0m    http://172.18.0.3:9000  http://127.0.0.1:9000
+[32mminio_1   |[0m 
+[32mminio_1   |[0m Object API (Amazon S3 compatible):
+[32mminio_1   |[0m    Go:         https://docs.min.io/docs/golang-client-quickstart-guide
+[32mminio_1   |[0m    Java:       https://docs.min.io/docs/java-client-quickstart-guide
+[32mminio_1   |[0m    Python:     https://docs.min.io/docs/python-client-quickstart-guide
+[35mredis_1   |[0m 1:M 29 Sep 2022 15:42:07.821 * Ready to accept connections
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,491] [PID 1] [MainThread] [dramatiq.MainProcess] [INFO] Dramatiq '1.10.0' is booting up.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,424] [PID 8] [MainThread] [dramatiq.WorkerProcess(0)] [INFO] Worker process is ready for action.
+[32mminio_1   |[0m    JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
+[32mminio_1   |[0m    .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,489] [PID 9] [MainThread] [dramatiq.WorkerProcess(1)] [INFO] Worker process is ready for action.
+[34mweb_1     |[0m INFO:     Started server process [1]
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,463] [PID 10] [MainThread] [dramatiq.WorkerProcess(2)] [INFO] Worker process is ready for action.
+[32mminio_1   |[0m 
+[32mminio_1   |[0m API: SYSTEM()
+[32mminio_1   |[0m Time: 15:42:07 UTC 09/29/2022
+[32mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[32mminio_1   |[0m Error: Unable to migrate IAM users and policies to new format: sio: data is not authentic (*fmt.wrapError)
+[32mminio_1   |[0m        1: cmd/iam.go:510:cmd.(*IAMSys).Init()
+[32mminio_1   |[0m 
+[32mminio_1   |[0m API: SYSTEM()
+[32mminio_1   |[0m Time: 15:42:07 UTC 09/29/2022
+[32mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[32mminio_1   |[0m Error: IAM sub-system is partially initialized, some users may not be available (*errors.errorString)
+[32mminio_1   |[0m        1: cmd/iam.go:511:cmd.(*IAMSys).Init()
+[34mweb_1     |[0m INFO:     Waiting for application startup.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,449] [PID 11] [MainThread] [dramatiq.WorkerProcess(3)] [INFO] Worker process is ready for action.
+[34mweb_1     |[0m INFO:     Application startup complete.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,489] [PID 12] [MainThread] [dramatiq.WorkerProcess(4)] [INFO] Worker process is ready for action.
+[34mweb_1     |[0m INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,464] [PID 13] [MainThread] [dramatiq.WorkerProcess(5)] [INFO] Worker process is ready for action.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,446] [PID 14] [MainThread] [dramatiq.WorkerProcess(6)] [INFO] Worker process is ready for action.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,486] [PID 15] [MainThread] [dramatiq.WorkerProcess(7)] [INFO] Worker process is ready for action.
+[36;1mworker_1  |[0m [2022-09-29 15:42:07,491] [PID 64] [MainThread] [dramatiq.ForkProcess(0)] [INFO] Fork process 'dramatiq.middleware.prometheus:_run_exposition_server' is ready for action.
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,623] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,624] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,625] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: grobidAssets for path /*
+[36mcandc_1   |[0m waiting for connections on 0.0.0.0:9004
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,942] com.hubspot.dropwizard.guicier.DropwizardModule: Added guice injected health check: org.grobid.service.resources.HealthResource
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,948] org.grobid.core.utilities.GrobidProperties: environment variables overrides: {}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,950] org.grobid.service.GrobidRestService: Initiating Servlet GrobidRestService
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,951] org.grobid.core.main.LibraryLoader: Loading external native sequence labelling library
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,951] org.grobid.core.main.LibraryLoader: Loading Wapiti native library...
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,952] org.grobid.core.main.LibraryLoader: Native library for sequence labelling loaded
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,954] org.grobid.core.lexicon.Lexicon: Initiating dictionary
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,954] org.grobid.core.lexicon.Lexicon: End of Initialization of dictionary
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,954] org.grobid.core.lexicon.Lexicon: Initiating names
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:08,954] org.grobid.core.lexicon.Lexicon: End of initialization of names
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,329] org.grobid.core.lexicon.Lexicon: Initiating country codes
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,329] org.grobid.core.lexicon.Lexicon: End of initialization of country codes
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,413] org.grobid.core.factory.GrobidPoolingFactory: Number of Engines in pool active/max: 1/10
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,413] org.grobid.service.GrobidRestService: Initiating of Servlet GrobidRestService finished.
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,417] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.resources.HealthResource as a root resource class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,417] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.GrobidRestService as a root resource class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,418] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.exceptions.mapper.GrobidServiceExceptionMapper as a provider class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,418] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.exceptions.mapper.GrobidExceptionsTranslationUtility as a provider class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,418] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.exceptions.mapper.GrobidExceptionMapper as a provider class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,418] com.hubspot.dropwizard.guicier.DropwizardModule: Registering org.grobid.service.exceptions.mapper.WebApplicationExceptionMapper as a provider class
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,420] org.grobid.service.main.GrobidServiceApplication: Service config=GrobidServiceConfiguration{server=DefaultServerFactory{applicationConnectors=[io.dropwizard.jetty.HttpConnectorFactory@1e6b9a95], adminConnectors=[io.dropwizard.jetty.HttpConnectorFactory@1e8823d2], adminMaxThreads=64, adminMinThreads=1, applicationContextPath=/, adminContextPath=/}, logging=DefaultLoggingFactory{level=INFO, loggers={org.apache.pdfbox.pdmodel.font.PDSimpleFont="OFF"}, appenders=[io.dropwizard.logging.ConsoleAppenderFactory@7ce7e83c, io.dropwizard.logging.FileAppenderFactory@5017e1]}, metrics=MetricsFactory{frequency=1 minute, reporters=[]}}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,435] io.dropwizard.server.ServerFactory: Starting grobid-service
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m  _______  _______  _______  ______  _________ ______     _______  _______  _______          _________ _______  _______
+[33mgrobid_1  |[0m (  ____ \(  ____ )(  ___  )(  ___ \ \__   __/(  __  \   (  ____ \(  ____ \(  ____ )|\     /|\__   __/(  ____ \(  ____ \
+[33mgrobid_1  |[0m | (    \/| (    )|| (   ) || (   ) )   ) (   | (  \  )  | (    \/| (    \/| (    )|| )   ( |   ) (   | (    \/| (    \/
+[33mgrobid_1  |[0m | |      | (____)|| |   | || (__/ /    | |   | |   ) |  | (_____ | (__    | (____)|| |   | |   | |   | |      | (__
+[33mgrobid_1  |[0m | | ____ |     __)| |   | ||  __ (     | |   | |   | |  (_____  )|  __)   |     __)( (   ) )   | |   | |      |  __)
+[33mgrobid_1  |[0m | | \_  )| (\ (   | |   | || (  \ \    | |   | |   ) |        ) || (      | (\ (    \ \_/ /    | |   | |      | (
+[33mgrobid_1  |[0m | (___) || ) \ \__| (___) || )___) )___) (___| (__/  )  /\____) || (____/\| ) \ \__  \   /  ___) (___| (____/\| (____/\
+[33mgrobid_1  |[0m (_______)|/   \__/(_______)|/ \___/ \_______/(______/   \_______)(_______/|/   \__/   \_/   \_______/(_______/(_______/
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,780] org.eclipse.jetty.setuid.SetUIDListener: Opened application@12e12ac9{HTTP/1.1,[http/1.1]}{0.0.0.0:8070}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,780] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@5e230fc6{HTTP/1.1,[http/1.1]}{0.0.0.0:8071}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:09,782] org.eclipse.jetty.server.Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_212-b04
+[33mgrobid_1  |[0m WARN  [2022-09-29 15:42:09,989] org.glassfish.jersey.internal.inject.Providers: A provider org.grobid.service.exceptions.mapper.GrobidExceptionsTranslationUtility registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.grobid.service.exceptions.mapper.GrobidExceptionsTranslationUtility will be ignored. 
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,218] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m     POST    /api/annotatePDF (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/citationPatentAnnotations (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     GET     /api/grobid (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     GET     /api/health (org.grobid.service.resources.HealthResource)
+[33mgrobid_1  |[0m     GET     /api/isalive (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processAffiliations (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processAffiliations (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processCitation (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processCitation (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processCitationNames (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processCitationNames (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processCitationPatentPDF (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processCitationPatentST36 (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processCitationPatentTXT (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processDate (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processDate (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processFulltextAssetDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processFulltextAssetDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processFulltextDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processFulltextDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processHeaderDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processHeaderDocument (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processHeaderNames (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processHeaderNames (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/processReferences (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     PUT     /api/processReferences (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     POST    /api/referenceAnnotations (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m     GET     /api/version (org.grobid.service.GrobidRestService)
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,220] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@795b66d{/,null,AVAILABLE}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,224] io.dropwizard.setup.AdminEnvironment: tasks = 
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+[33mgrobid_1  |[0m     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+[33mgrobid_1  |[0m 
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,229] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@569348e1{/,null,AVAILABLE}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,238] org.eclipse.jetty.server.AbstractConnector: Started application@12e12ac9{HTTP/1.1,[http/1.1]}{0.0.0.0:8070}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,239] org.eclipse.jetty.server.AbstractConnector: Started admin@5e230fc6{HTTP/1.1,[http/1.1]}{0.0.0.0:8071}
+[33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,239] org.eclipse.jetty.server.Server: Started @3048ms

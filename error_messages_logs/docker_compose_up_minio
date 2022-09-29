@@ -1,0 +1,38 @@
+Attaching to sapienta_minio_1
+[36mminio_1   |[0m 
+[36mminio_1   |[0m  You are running an older version of MinIO released 2 years ago 
+[36mminio_1   |[0m  Update: Run `mc admin update` 
+[36mminio_1   |[0m 
+[36mminio_1   |[0m 
+[36mminio_1   |[0m 
+[36mminio_1   |[0m API: SYSTEM()
+[36mminio_1   |[0m Time: 15:38:57 UTC 09/29/2022
+[36mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[36mminio_1   |[0m Error: Unable to initialize config, some features may be missing Invalid credentials (*fmt.wrapError)
+[36mminio_1   |[0m        3: cmd/server-main.go:366:cmd.initAllSubsystems()
+[36mminio_1   |[0m        2: cmd/server-main.go:295:cmd.initServer()
+[36mminio_1   |[0m        1: cmd/server-main.go:500:cmd.serverMain()
+[36mminio_1   |[0m Endpoint: http://172.18.0.2:9000  http://127.0.0.1:9000 
+[36mminio_1   |[0m 
+[36mminio_1   |[0m Browser Access:
+[36mminio_1   |[0m    http://172.18.0.2:9000  http://127.0.0.1:9000
+[36mminio_1   |[0m 
+[36mminio_1   |[0m Object API (Amazon S3 compatible):
+[36mminio_1   |[0m    Go:         https://docs.min.io/docs/golang-client-quickstart-guide
+[36mminio_1   |[0m    Java:       https://docs.min.io/docs/java-client-quickstart-guide
+[36mminio_1   |[0m    Python:     https://docs.min.io/docs/python-client-quickstart-guide
+[36mminio_1   |[0m    JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
+[36mminio_1   |[0m    .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
+[36mminio_1   |[0m 
+[36mminio_1   |[0m API: SYSTEM()
+[36mminio_1   |[0m Time: 15:38:57 UTC 09/29/2022
+[36mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[36mminio_1   |[0m Error: Unable to migrate IAM users and policies to new format: sio: data is not authentic (*fmt.wrapError)
+[36mminio_1   |[0m        1: cmd/iam.go:510:cmd.(*IAMSys).Init()
+[36mminio_1   |[0m 
+[36mminio_1   |[0m API: SYSTEM()
+[36mminio_1   |[0m Time: 15:38:57 UTC 09/29/2022
+[36mminio_1   |[0m DeploymentID: 258c47be-215e-4ffb-aa75-0e511f50c814
+[36mminio_1   |[0m Error: IAM sub-system is partially initialized, some users may not be available (*errors.errorString)
+[36mminio_1   |[0m        1: cmd/iam.go:511:cmd.(*IAMSys).Init()
+Gracefully stopping... (press Ctrl+C again to force)
