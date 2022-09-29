@@ -141,3 +141,4 @@ Attaching to sapienta_candc_1, sapienta_minio_1, sapienta_worker_1, sapienta_gro
 [33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,238] org.eclipse.jetty.server.AbstractConnector: Started application@12e12ac9{HTTP/1.1,[http/1.1]}{0.0.0.0:8070}
 [33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,239] org.eclipse.jetty.server.AbstractConnector: Started admin@5e230fc6{HTTP/1.1,[http/1.1]}{0.0.0.0:8071}
 [33mgrobid_1  |[0m INFO  [2022-09-29 15:42:10,239] org.eclipse.jetty.server.Server: Started @3048ms
+Gracefully stopping... (press Ctrl+C again to force)

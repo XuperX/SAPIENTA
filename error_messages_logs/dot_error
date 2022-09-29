@@ -1,0 +1,11 @@
+SAPIENTA_STOPWORDS_LIST=/models/written.num.o5
+SAPIENTA_MODEL_FILE=/models/all_papers.model
+SAPIENTA_NGRAMS_FILE=/models/ngrams.pickle
+
+SAPIENTA_ENDPOINT=http://localhost:8000
+SAPIENTA_WORKER_PASSWORD=topsecret
+REDIS_PASSWORD=topsecret
+MINIO_BUCKET=sapienta
+MINIO_ACCESS_KEY=minio_sapienta
+MINIO_SECRET_KEY=minio_sapienta
+MINIO_USE_SSL=0
